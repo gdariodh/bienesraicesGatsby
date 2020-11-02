@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promociones",
+  "info": {
+    "name": "Promociones"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

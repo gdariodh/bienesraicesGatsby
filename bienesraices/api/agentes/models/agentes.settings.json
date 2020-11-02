@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agentes",
+  "info": {
+    "name": "Agentes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "telefono": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
